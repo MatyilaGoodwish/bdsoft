@@ -25,8 +25,8 @@
               this.client.password
             )
             .then(user => {
-              //swal("Registration Success", "Your email has been succesfully registered pending activation", "success");
-              $location.path("/dashboard");
+              swal("Registration Success", "Your email has been succesfully registered pending activation", "success");
+              $location.path("/dashboard").replace();
             })
             .catch(error => {
               swal("Technical Notice", "under upgrade", "info");
