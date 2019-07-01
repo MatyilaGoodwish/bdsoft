@@ -9,11 +9,13 @@
           firebase.auth().signOut();
           $location.path("/");
         };
-        firebase.auth().onAuthStateChanged(user => {
-          if (!user) {
-            $location.path("/login");
-          }
-        });
+        this.isUser = function(){
+          firebase.auth().onAuthStateChanged(user => {
+            if (!user) {
+              location.replace("/");
+            }
+          });
+        }
       }
     ]
   });

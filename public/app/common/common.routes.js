@@ -18,7 +18,8 @@
           template: "<login></login>"
         })
         .when("/dashboard", {
-          template: "<dashboard></dashboard>"
+          template: "<dashboard></dashboard>",
+          
         })
         .when("/register", {
           template: "<register></register>"
