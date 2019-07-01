@@ -7,7 +7,7 @@
       function dashboardController($location) {
         this.logout = function() {
           firebase.auth().signOut();
-          $location.path("/");
+          location.replace("/");
         };
         this.isUser = function(){
           firebase.auth().onAuthStateChanged(user => {
