@@ -9,7 +9,7 @@
     "$routeProvider",
     "$locationProvider",
     function($routeProvider, $locationProvider) {
-      $locationProvider.hashPrefix("");
+      $locationProvider.html5Mode(true).hashPrefix("");
       $routeProvider
         .when("/", {
           template: "<welcome></welcome>"
@@ -35,9 +35,7 @@
         .when("/websites", {
           template: "<websites></websites>"
         })
-        .otherwise({
-          redirectTo: "/"
-        });
+        
     }
   ]);
 })();
