@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="oren">
+
+<head>
+    <base href="/" target="_blank">
+    <!--
+        Developer/Project Manager
+        Author: Goodwish Matyila
+        Mobile +27(082) 632-5761
+        Office +27(087) 057-1581
+        Email: goomatyila@gmail.com 
+               goodwish@axxess.co.za
+    -->
+    <meta name="fragment" content="!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="icon" href="img/logo.png" rel="shortcut icon" />
+    <title>oren laboratories.</title>
+    <meta name="description"
+        content="oren laboratories, Get website development and Secure your physical, virtual, cloud, and container environments more effectively with a single solution. Simple. Automated. Improved visibility and control." />
+    <meta name="keywords"
+        content="business websites, trend micro renewals, antivirus protection, server firewall, uncapped mobile data, enterprise websites, custom software development, business automation, process automation, insurance websites, online marketing, leads marketing, business leads, premium business services, general content, content writters, trend micro, websites S, secured" />
+    
+    <!--Web Firebase, Auth, Firestore, Inititialization sequence -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="/__/firebase/6.1.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/6.1.1/firebase-auth.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <!--App UI-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/ui.css" />
+
+    <!--Web UX/UI Framework AngularJS -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="app/index.js"></script>
+
+    <!--Dashboard components -->
+    <script src="app/dashboard/dashboard.component.js"></script>
+
+    <!--Login component -->
+    <script src="app/login/login.component.js"></script>
+
+    <!--Common-->
+    <script src="app/common/accounts.service.js"></script>
+
+    <!--Privacy components -->
+    <script src="app/privacy/privacy.component.js"></script>
+
+    <!--Auth services & components -->
+    <script src="app/register/register.component.js"></script>
+
+    <!--Activations components -->
+    <script src="app/activations/activations.component.js"></script>
+
+    <!--Landing components -->
+    <script src="app/landing/welcome.component.js"></script>
+
+    <!--TrendMicro components -->
+    <script src="app/products/products.component.js"></script>
+    <script src="app/products/products.service.js"></script>
+
+    <!--Web services & components -->
+    <script src="app/websites/websites.component.js"></script>
+    <script src="app/websites/websites.service.js"></script>
+
+    <!--3rd Party Lib -->
+    <script src="lib/swal.js"></script>
+
+    <!--Will be moved to external -->
+    <style>
+        body {
+            overflow-x: hidden !important
+        }
+    </style>
+</head>
+<body>
+    <!--Header App -->
+    <header ng-include="'layouts/header.html'"></header>
+    <!--Root Component -->
+    <main ng-view></main>
+    <!--Footer App -->
+    <footer ng-include="'layouts/footer.html'"></footer>
+</body>
+</html>

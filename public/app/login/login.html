@@ -1,0 +1,32 @@
+
+<form novalidate>
+ <div class="container my-5">
+       <div class="row">
+                  <div class="col"></div>
+                   <div class="col-md-4 text-center shadow-sm p-4 bg-light">
+                   <div>
+                        <img src="img/logo.png" width="40%" />
+                             <div class="display-4 text-capitalize">Login</div>
+                             <p class="p-2 lead text-muted">
+                                   Get personalized recommendation when you sign in
+                            </p>
+                            
+                       <input type="email" class="form-control my-3" placeholder="Email" ng-model="$ctrl.email" ng-required/>
+
+
+                       <input type="password" class="form-control my-3" placeholder="Password" ng-model="$ctrl.password" ng-required/>
+
+                       <hr>
+
+                       </div>
+
+                                          <a class="btn p-3 text-dark shadow-sm bg-light" href="#/">Cancel</a>
+                                  <button class="mx-2 btn p-3 text-white shadow-sm bg-info" ng-click="$ctrl.loginClient()">Login </button>
+
+
+          
+                   </div>
+                 <div class="col"></div>
+        </div>
+    </div>
+</form>

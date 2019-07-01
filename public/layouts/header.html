@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" ng-controller="members-menu">
+    <a href="#/" class="navbar-brand lead font-weight-bold font-italic text-muted">
+        <img src="img/logo.png" width="60"/> OREN LABORATORIES
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-auto font-weight-normal">
+          <li class="nav-item active">
+            <a class="nav-link  p-3" href="/#/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-3" href="/#/products">Online Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-3" href="/#/websites">Get A Website </a>
+          </li>
+
+  
+          
+         
+          
+        </ul>
+          <div ng-if="isUser">
+            <ul class="navbar-nav ml-auto font-weight-normal">
+              <li class="nav-item">
+                  <a class="nav-link  p-3" href="/#/dashboard">Dashboard</a>
+                </li>
+              </ul>
+          </div>
+
+          <div ng-if="!isUser">
+              <ul class="navbar-nav ml-auto font-weight-normal">
+                <li class="nav-item">
+                    <a class="nav-link  p-3" href="/#/login">Login</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link bg-info p-3 text-white" href="/#/register">Sign Up</a>
+                  </li>
+                </ul>
+            </div>
+
+      </div>
+</nav>

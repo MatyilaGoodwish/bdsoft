@@ -1,0 +1,31 @@
+
+ <form class="container my-5" >
+       <div class="row">
+                  <div class="col"></div>
+                   <div class="col-md-4 shadow-sm p-4 bg-light">
+                   <div class="text-center">
+                     <img src="img/logo.png" width="40%" />
+                             <div class="display-4 text-capitalize">New Client </div>
+                             <p class="p-2 lead text-muted">
+                                Account registration
+                            </p>
+                            
+                       <input type="email" class="form-control my-3" placeholder="Email" ng-model="$ctrl.client.email" required/>
+
+                       <input type="password" class="form-control my-3" placeholder="Password" ng-model="$ctrl.client.password" required/>
+
+                              <input type="password" class="form-control my-3" placeholder="Repeat Password" ng-model="$ctrl.client.password2" required/>
+                                        <hr>
+                   
+                     
+ 
+                                          <a class="btn p-3 text-dark shadow-sm bg-light" href="#/">Cancel</a>
+                                  <button class="mx-2 btn p-3 text-white shadow-sm bg-info" ng-click="$ctrl.registerClient($ctrl.client.email,$ctrl.client.password)">Register </button>
+                     <br/>
+
+                           </div>
+
+      </div>
+                 <div class="col"></div>
+        </div>
+    </form>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="action" style="
+            color: white; font-size: 30px; text-align: center; border-style:solid; border-color: white; border-width: 5px; padding:3px;   
+        "></div>
+
+<script>
+    addEventListener('mousemove', function(interaction){
+        addEventListener('green', (sender)=>{
+        //attempts to leave at the top
+        notify(message,`color:${color};font-size: 20px;`);
+        })
+        addEventListener('blue', (sender)=>{
+            //attempts to leave at the left
+            notify(message,`color:${color};font-size: 20px;`);
+        })
+        addEventListener('black', (sender)=>{
+            //attempts to leave at the right
+            notify(message,`color:${color};font-size: 20px;`);
+        })
+        addEventListener('red', (sender)=>{
+            //attempts to leave at the bottom
+            notify(message,`color:${color};font-size: 20px;`);
+        })
+        const notify = (note) => console.log(note)
+        const log = (message,color, action) => {
+            dispatchEvent(new CustomEvent(color));
+            document.body.style.backgroundColor = color;
+            document.getElementById('action').innerText = action;
+            return true;
+        } 
+        let x = window.innerWidth - interaction.pageX < 40 ? log('%cReached Right Side', 'black', 'Scrolling Page or trying to leave on right') : false;
+        let y = window.innerHeight - interaction.pageY < 40 ? log('%cReached Page bottom', 'red', 'Interrupted or trying to leave at bottom') : false;
+        let xy = interaction.pageX < 40 ? log("%cYou Cursor is too much on the left side", 'blue', 'Attempting to leave on left') : false;
+        let yx = interaction.pageY < 40 ? log("%cStart browsing the page", 'green', 'Attempting to leave at top') : false; 
+
+        if( (x == false && y == false) && (xy == false && yx == false) ){
+            log("%cYou are currently browsing the page", 'purple', 'Browsing')
+        }
+    })
+
+</script>
+    
+</body>
+</html>

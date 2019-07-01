@@ -1,0 +1,41 @@
+
+ <form class="container my-5" >
+    <div class="row">
+               <div class="col"></div>
+                <div class="col-md-6 shadow p-4 bg-light">
+                <div>
+                          <div class="display-4 text-capitalize">Activation </div>
+                          <p class="p-2 lead text-muted">
+                             Final Step to account approval for 10% offer with us.
+                         </p>
+                         
+                    <input type="text" class="form-control my-3"  placeholder="First Name" ng-model="client.firstname" required />
+
+                    <input type="text" class="form-control my-3"  placeholder="Last Name" ng-model="client.lastname" required/>
+
+                    <input type="text" class="form-control my-3"   placeholder="Contact Phone" ng-model="client.phone" required/>
+                    <hr>
+                    <p class="lead text-muted my-1">
+                        Firstly process your details to get your account instant approval for the 10% offer! then click finalize to accept offer.
+                    </p>
+                    <button ng-click="process()" class="btn-block btn-red p-3 btn shadow-sm rounded">Step 1: Process (Get Approved) </button>
+                    <hr>
+                    <p class="lead text-muted my-1">
+                        Complete your registration and activate your account.
+                     </p>
+                    
+                    <div class="my-4">
+                        <a class="btn-block btn-success p-3 btn shadow-sm rounded" href="https://www.payfast.co.za/eng/process?cmd=_paynow&amp;receiver=11511929&amp;item_name=Account+Activation+R99&amp;amount=99.00&amp;return_url=https%3A%2F%2Forenlabs.com%2F%23%21%2Fnotify&amp;cancel_url=https%3A%2F%2Forenlabs.com%2F%23%21%2Ffailed&amp;cycles=0&amp;frequency=3&amp;m_subscription_id=pay_now_11511929&amp;m_payment_id=pay_now_11511929&amp;subscription_type=1&amp;recurring_amount=99.00"> Step 2: Finalize Account<img class="collapse" src="https://www.payfast.co.za/images/buttons/light-large-subscribe.png" width="210" height="59" alt="Subscribe" title="Subscribe Now with PayFast" /></a>
+                    </div>
+                   
+                                        
+                                
+                  <br/>
+
+                        </div>
+
+              
+                </div>
+              <div class="col"></div>
+     </div>
+ </form>
