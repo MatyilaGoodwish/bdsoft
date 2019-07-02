@@ -4,15 +4,8 @@
     templateUrl: "app/register/register.html",
     controller: function registerController($location) {
       this.registerClient = function() {
-        if (
-          this.client.password.length < 6 &&
-          this.client.password2.length < 6
-        ) {
-          swal(
-            "Fix Password",
-            "Password is too short try longer password",
-            "error"
-          );
+        if (this.client.password.length < 6 && this.client.password2.length < 6 ) {
+          swal("Fix Password", "Password is too short try longer password", "error");
         } else if (this.client.password !== this.client.password2) {
           swal("Match Passwords", "Passwords do not match!", "error");
         } else if (this.client.email === undefined) {
