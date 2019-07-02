@@ -7,12 +7,12 @@
       function dashboardController($location) {
         this.logout = function() {
           firebase.auth().signOut();
-          location.replace("/");
+          $location.path("/").replace();
         };
         this.isUser = function(){
           firebase.auth().onAuthStateChanged(user => {
             if (!user) {
-              location.replace("/");
+              $location.path("/").replace();
             }
           });
         }
