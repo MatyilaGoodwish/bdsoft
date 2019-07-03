@@ -5,7 +5,7 @@
       try{
         let user = await firebase.auth().signInWithEmailAndPassword(email, password);
         if(user){
-          location.replace("/dashboard");
+          $location.path("/dashboard").replace();
         }
       }catch(error){
         swal("Login Issue", error.message, "error");
