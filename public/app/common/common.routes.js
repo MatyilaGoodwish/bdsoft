@@ -9,7 +9,7 @@
     "$routeProvider",
     "$locationProvider",
     function($routeProvider, $locationProvider) {
-      $locationProvider.html5Mode(true).hashPrefix("");
+      $locationProvider.hashPrefix("");
         $routeProvider
         .when("/", { template: "<welcome></welcome>" })
         .when("/renew", { template: "<renew></renew>" })
