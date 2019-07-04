@@ -4,9 +4,9 @@
                     <div class="col"></div>
                 <div class="col-md-4 p-2">
                     <p class="text-left text-white font-weight-bold">
-                        Find products by name
+                        {{$ctrl.title}}
                     </p>
-                    <input type="text" ng-model="$ctrl.shoppingItems.product" placeholder="type here..." class="form-control" />
+                    <input type="text" ng-model="$ctrl.shoppingItems.product" placeholder="Type here..." class="form-control" />
                 </div>
                 <div class="col"></div>
             </div>
@@ -24,7 +24,7 @@
                                 <a ng-href="{{item.download}}" class="my-4 btn btn-red bg-red p-2 shadow-sm">Download Now</a>
                            
                                <p class="text-muted my-2">
-                                    Need help with the upgrade? <a href="/#/login">Click here</a> for instructions.
+                                    Need help with the upgrade? <a ng-href="{{$ctrl.support}}">Click here</a> for instructions.
                                </p>
                             </div>
                             <hr/>

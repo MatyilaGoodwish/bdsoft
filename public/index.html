@@ -1,91 +1,23 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="oren">
-
+<html lang="en" >
 <head>
     <base href="/">
-    <!--
-        Developer/Project Manager
-        Author: Goodwish Matyila
-        Mobile +27(082) 632-5761
-        Office +27(087) 057-1581
-        Email: goomatyila@gmail.com
-               goodwish@axxess.co.za
-    -->
     <meta name="fragment" content="!">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="icon" href="img/logo.png" rel="shortcut icon" />
     <title>OREN | Trend Micro™ Maximum Security 2019 provides complete multi-device protection against viruses, ransomware, dangerous websites, and identity thieves so you can enjoy your digital life safely.</title>
-    <meta name="description"
-          content="Trend Micro™ Maximum Security 2019 provides complete multi-device protection against viruses, ransomware, dangerous websites, and identity thieves so you can enjoy your digital life safely." />
-    <meta name="keywords"
-          content="antivirus,firewall,maximum,securiry,viruses" />
-
-    <!--Web Firebase, Auth, Firestore, Inititialization sequence
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
-    <script src="/__/firebase/6.1.1/firebase-firestore.js"></script>
-    <script src="/__/firebase/6.1.1/firebase-auth.js"></script>
-    <script src="/__/firebase/init.js"></script>-->
-    <!--App UI-->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/ui.css" />
-
-    <!--Web UX/UI Framework AngularJS -->
+    <meta name="description" content="Trend Micro™ Maximum Security 2019 provides complete multi-device protection against viruses, ransomware, dangerous websites, and identity thieves so you can enjoy your digital life safely." />
+    <meta name="keywords"  content="antivirus,firewall,maximum,securiry,viruses" />
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
-    <script src="app/index.js"></script>
-    <script src="app/common/common.routes.js"></script>
-    <script src="app/common/config.controller.js"></script>
-
-    <!--Dashboard components -->
-    <script src="app/dashboard/dashboard.component.js"></script>
-
-    <!--Login component -->
-    <script src="app/login/login.component.js"></script>
-
-    <!--Common-->
-    <script src="app/common/accounts.service.js"></script>
-
-    <!--Privacy components -->
-    <script src="app/privacy/privacy.component.js"></script>
-
-    <!--Auth services & components -->
-    <script src="app/register/register.component.js"></script>
-
-    <!--Activations components -->
-    <script src="app/activations/activations.component.js"></script>
-
-    <!--Landing components -->
-    <script src="app/landing/welcome.component.js"></script>
-
-    <!--TrendMicro components -->
-    <script src="app/products/products.component.js"></script>
-    <script src="app/products/products.service.js"></script>
-
-    <!--Web services & components -->
-    <script src="app/websites/websites.component.js"></script>
-    <script src="app/websites/websites.service.js"></script>
-
-    <!-- Renewals -->
-    <script src="app/renewals/renew.component.js"></script>
-
-    <!--3rd Party Lib -->
-    <script src="lib/swal.js"></script>
-
-    <!--Will be moved to external -->
-    <style>
-        body {
-            overflow-x: hidden !important
-        }
-    </style>
 </head>
-<body>
-  
-    <header ng-include="'layouts/header.html'"></header> 
-    <!--Root Component -->
+<body ng-app="oren">
+    <header ng-include="'layouts/header.html'"></header>
     <main ng-view></main>
-    <!--Footer App -->
     <footer ng-include="'layouts/footer.html'"></footer>
+    <script src="app/bootstrap.js"></script>
+    <script src="app/common/common.routes.js"></script>
 </body>
 </html>

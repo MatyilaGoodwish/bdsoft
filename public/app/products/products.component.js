@@ -4,9 +4,11 @@
     templateUrl: "app/products/products.html",
     controller: [
       "ProductsSvc",
-      function ProductsCtrl(ProductsSvc) {
-        this.shoppingItems = ProductsSvc.ProductsCatalogue;
-      }
+        function ProductsCtrl(ProductsSvc) {
+            this.title = "Find products by name";
+            this.support = ProductsSvc.supportEmail;
+            this.shoppingItems = ProductsSvc.ProductsCatalogue;
+        }
     ]
   });
 })();

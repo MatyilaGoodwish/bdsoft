@@ -1,6 +1,7 @@
 (function() {
   const oren = angular.module("oren");
-  oren.service("ProductsSvc", function() {
+    oren.service("ProductsSvc", function () {
+        this.supportEmail = "/#/renew";
     this.ProductsCatalogue = [
       {
         product: "Trend Micro™ Maximum Security 2019",

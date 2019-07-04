@@ -1,5 +1,22 @@
 <div class="container">
     <div class="p-2 my-3">
-       Phone information
+       <h2>{{$ctrl.section}}</h2>
+
+        <p class="lead text-muted">
+            {{$ctrl.title}}
+        </p>
+        <div class="row well-sm shadow-sm p-4">
+            <div class="col-md-6">
+                <form ng-show="$ctrl.isForm">
+                    <p class="lead">{{$ctrl.subscriptionLabel}}</p>
+                    <input type="email" placeholder="email"  class="form-control w-60" ng-model="$ctrl.email" required />
+                    <p></p>
+                    <button ng-click="$ctrl.getInformation()" class="btn btn-red btn-lg">Request License</button>
+                </form>
+                <p ng-show="$ctrl.isNotify">
+                    <span>{{$ctrl.notification}}</span>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
