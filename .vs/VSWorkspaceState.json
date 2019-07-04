@@ -5,6 +5,6 @@
     "\\public\\app",
     "\\public\\app\\landing"
   ],
-  "SelectedNode": "\\public\\app\\landing\\welcome.html",
+  "SelectedNode": "\\public\\app\\landing\\welcome.component.js",
   "PreviewInSolutionExplorer": false
 }
