@@ -5,6 +5,7 @@
         controller: function () {
             this.isForm = true;
             this.isNotify = false;
+            this.partnerImage = "img/partner.png";
             this.notification = "Your message has been succesfully sent. we will contact you within 2-3 business days.";
             this.title = "Buy/Renew Products";
             this.subscriptionLabel = "Subscription Email";
