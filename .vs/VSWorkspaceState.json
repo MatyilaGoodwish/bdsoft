@@ -3,8 +3,8 @@
     "",
     "\\public",
     "\\public\\app",
-    "\\public\\app\\register"
+    "\\public\\app\\landing"
   ],
-  "SelectedNode": "\\public\\app\\register\\register.component.js",
+  "SelectedNode": "\\public\\app\\landing\\welcome.html",
   "PreviewInSolutionExplorer": false
 }
