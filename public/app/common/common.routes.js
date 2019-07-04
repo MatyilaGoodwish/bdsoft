@@ -14,6 +14,9 @@
         .when("/", {
           template: "<welcome></welcome>"
         })
+          .when("/renew", {
+              template: "<renew></renew>"
+          })
         .when("/login", {
           template: "<login></login>"
         })
