@@ -36,10 +36,10 @@
                                         Tracing Reports
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Advanced Trace PLUS Debt Review</a>
-                                  <a class="dropdown-item" href="#">TransUnion Consumer Trace</a>
-                                  <a class="dropdown-item" href="#">XDS Consumer Trace</a>
-                                  <a class="dropdown-item" href="#">Compuscan Consumer Trace</a>
+                                  <a class="dropdown-item" href="/#/tracing">Advanced Trace PLUS Debt Review</a>
+                                  <a class="dropdown-item" href="/#/tracing">TransUnion Consumer Trace</a>
+                                  <a class="dropdown-item" href="/#/tracing">XDS Consumer Trace</a>
+                                  <a class="dropdown-item" href="/#/tracing">Compuscan Consumer Trace</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -201,6 +201,16 @@
                     }
                 })
     
+                oren.component("tracing", {
+                    templateUrl: "app/views/tracing.html",
+                    controller: function contactController() {
+                        this.phone = "+27 (087) 057-1581",
+                        this.fax = "086 606 4081";
+                        this.email = "orenlaboratories@gmail.com";
+                        this.tracing = "goodwish@axxess.co.za";
+                        this.website = "https://www.orenlabs.com";
+                    }
+                })
                 oren.component("renew", {
                     templateUrl: "app/views/renew.html",
                     controller: function renewalController() {
