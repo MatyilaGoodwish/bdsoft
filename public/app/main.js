@@ -23,28 +23,27 @@
     }]);
 
     oren.component("welcome", {
-        templateUrl: "app/landing/welcome.html",
+        templateUrl: "app/views/welcome.html",
         controller: function () { }
     });
 
     oren.component("products", {
-        templateUrl: "app/products/products.html",
+        templateUrl: "app/views/downloads.html",
         controller: ["ProductsSvc", function ProductsCtrl(ProductsSvc) {
             this.title = "Find products by name";
             this.support = ProductsSvc.supportEmail;
             this.shoppingItems = ProductsSvc.ProductsCatalogue;
-        }
-        ]
+        }]
     });
 
 
     oren.component("privacy", {
-        templateUrl: "app/privacy/privacy-policy.html",
+        templateUrl: "app/views/privacy.html",
         controller: function () { }
     });
 
     oren.component("websites", {
-        templateUrl: "app/websites/products.html",
+        templateUrl: "app/views/websites.html",
         controller: ["WebPricingSvc", function shop(WebPricingSvc) {
             this.shoppingItems = WebPricingSvc.PricingStructure;
         }
@@ -53,7 +52,7 @@
 
 
     oren.component("renew", {
-        templateUrl: "app/renewals/renew.html",
+        templateUrl: "app/views/renew.html",
         controller: function () {
             this.isForm = true;
             this.isNotify = false;
