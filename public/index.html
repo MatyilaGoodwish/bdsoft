@@ -6,120 +6,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="icon" href="img/logo.png" rel="shortcut icon" />
-    <title>OREN LABORATORIES | The Consumer Trace search report is a non-footprinting trace search that offers an extremely flexible input range for finding people. This report offers the most recent contact and employer information on file from all of South Africa's leading Credit Bureaus. Search with just Name, Surname and Date of Birth or use there ID Number.</title>
+    <link type="icon" href="img/logo2.png" rel="shortcut icon" />
+    <title>BD Soft | The Consumer Trace search report is a non-footprinting trace search that offers an extremely
+        flexible input range for finding people. This report offers the most recent contact and employer information on
+        file from all of South Africa's leading Credit Bureaus. Search with just Name, Surname and Date of Birth or use
+        there ID Number.</title>
     <meta name="description"
         content="The Consumer Trace search report is a non-footprinting trace search that offers an extremely flexible input range for finding people. This report offers the most recent contact and employer information on file from all of South Africa's leading Credit Bureaus. Search with just Name, Surname and Date of Birth or use there ID Number,Trend Micro™ Maximum Security 2019 provides complete multi-device protection against viruses, ransomware, dangerous websites, and identity thieves so you can enjoy your digital life safely." />
-    <meta name="keywords" content="tracing,consumers,background,checks,investigations,antivirus,firewall,maximum,securiry,viruses" />
+    <meta name="keywords"
+        content="tracing,consumers,background,checks,investigations,antivirus,firewall,maximum,securiry,viruses" />
+    <link href="css/styles.css" rel="stylesheet" />
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
     <script src="lib/swal.js"></script>
-   
+    <link rel="stylesheet" href="css/override.css" />
 </head>
-
 <body ng-app="oren">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-                <a href="/#/" class="navbar-brand lead font-weight-bold font-italic text-muted">
-                    <img src="img/logo.png" width="140"/>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-            
-                  <div class="collapse navbar-collapse font-weight-bold" id="navbarNav">
-                      <ul class="navbar-nav ml-auto font-weight-normal">
-                          <li class="nav-item">
-                              <a class="nav-link  p-3" href="/#/">Home</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle p-3"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Tracing Reports
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="/#/tracing">Advanced Trace PLUS Debt Review</a>
-                                  <a class="dropdown-item" href="/#/tracing">TransUnion Consumer Trace</a>
-                                  <a class="dropdown-item" href="/#/tracing">XDS Consumer Trace</a>
-                                  <a class="dropdown-item" href="/#/tracing">Compuscan Consumer Trace</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle p-3"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Computer Security
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                      <a class="dropdown-item" href="/#/products">User Protection</a>
-                                      <a class="dropdown-item" href="/#/products">Server Protection</a>
-                                      <a class="dropdown-item" href="/#/products">Company Information</a>
-                                      <a class="dropdown-item" href="/#/products">Ransomware Protection</a>
-                                    </div>
-                                </li>
-                        
-                          <li class="nav-item">
-                              <a class="nav-link  p-3" href="/#/renew">Buy License</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  p-3" href="/#/support">Get Support</a>
-                        </li>
-                      </ul>
-                  </div>
-            </nav>
+    <div ng-include="'layouts/header.html'"></div>
     <main ng-view></main>
-    
-<div class="bg-light container-fluid w-100 shadow-sm">
-        <div class="row pt-3 collapse">
-            <div class="col-md-3 text-muted p-1 text-left">
-                
-                <ul class="container text-justify text-left my-2">
-                    <li class="nav-link">
-                        <a href="#">
-                            <img src="img/partner.png" class="w-100" />
-                        </a>
-                    </li>
-                 </ul>
-            </div>
-            <div class="col-md-3 text-muted p-1 text-left">
-                <h5 class="title">ICT Services </h5>
-                <ul class="container text-justify text-left">
-                    <li class="nav-link">Security Reports <a href="https://www.trendmicro.com/vinfo/ae/security/research-and-analysis/threat-reports"> >> </a></li>
-                    <li class="nav-link">Free Webinars <a href="https://www.trendmicro.com/en_ae/about/webinars-customer.html"> >> </a></li>
-                    <li class="nav-link">Success Stories <a href="https://www.trendmicro.com/en_ae/about/customer-stories.html"> >> </a></li>
-                    <li class="nav-link">Maximum Security <a href="https://www.trendmicro.com/en_ae/forHome/products/maximum-security.html"> >> </a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 text-muted p-1 text-left">
-                <h5 class="title">Business Services</h5>
-                <ul class="container text-justify text-left">
-                    <li class="nav-link">FAQ Products <a href="https://esupport.trendmicro.com/en-us/home/pages/resources.aspx"> >> </a></li>
-                    <li class="nav-link">Home & Office Support <a href="https://esupport.trendmicro.com/en-us/home/pages/technical-support/1115328.aspx?cm_mmc=MyAccount-_-ContactSupport-_-AllProducts-_-All"> >> </a></li>
-                    <li class="nav-link">Renewals <a href="https://account.trendmicro.com/mylogin"> >> </a></li>
-                    <li class="nav-link">Free Stuff <a href="https://www.trendmicro.com/en_ae/forHome/products/free-tools.html"> >> </a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 text-muted p-1 text-left">
-                <h5 class="title">Digital Products </h5>
-                <ul class="container text-justify text-left">
-                    <li class="nav-link">Trend Micro Home <a href="https://www.trendmicro.com/en_ae/forHome.html"> >> </a></li>
-                    <li class="nav-link">Internet Security <a href="https://www.trendmicro.com/en_ae/forHome/products/internet-security.html"> >> </a></li>
-                    <li class="nav-link">Antivirus+ Security <a href="https://www.trendmicro.com/en_ae/forHome/products/antivirus-plus.html"> >> </a></li>
-                    <li class="nav-link">Antivirus for Mac <a href="https://www.trendmicro.com/en_ae/forHome/products/antivirus-for-mac.html"> >> </a></li>
-                </ul>
-            </div>
-        </div>
-       
-        <div class="row bg-dark text-light p-4 shadow-sm text-center">
-                <span class="text-muted text-center p-2 mx-1">
-                    Orenlabs.com &copy; 2010-2019 - <a href="http://connect.orenlabs.com">Connect with us</a> | <a href="/#/privacy">Privacy Policy</a></span>
-                <a class="bg-info p-2 shadow-sm lead rounded text-white font-weight-bold" href="http://webix.orenlabs.com">Webix JS Coming soon!</a>
-                
-              <br/>PayFast handles secure online payments on behalf of Oren Laboratories. By transacting with PayFast,Consumer advisory- PayPal Pte. Ltd., the holder of PayPal's stored value facility, does not require the approval of the Monetary Authority of Singapore.</small>
-              <small><img src="img/payfast-logo-white.png" width="100"  alt="payfast logo" class="mx-2"/><img class="mx-2" src="img/mastercard-horizontal-white.png" width="100" alt="mastercard logo"/>
-            </div>
-           
-    </div>
-
-        <script src="app/main.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div ng-include="'layouts/footer.html'"></div>
+    <script src="app/configuration.js"></script>
+    <!-- componens -->
+    <script src="app/components/welcome.js"></script>
+    <script src="app/components/products.js"></script>
+    <script src="app/components/privacy.js"></script>
+    <script src="app/components/websites.js"></script>
+    <script src="app/components/support.js"></script>
+    <script src="app/components/tracing.js"></script>
+    <script src="app/components/renewals.js"></script>
+    <script src="app/components/about.js"></script>
+    <!-- services -->
+    <script src="app/services/products.js"></script>
+    <script src="app/services/websites.js"></script>
+    <!-- resources -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

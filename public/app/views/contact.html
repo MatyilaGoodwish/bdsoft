@@ -1,23 +1,32 @@
 <div class="container container-fluid p-2 my-4">
-    <div class="display-4">Contact Information</div>
-        <div class="rows my-4">
-            <div class="col-md-6 p-4">
 
-                <ul class="nav">
-                    <li class="nav-link">
-                        <h4>Office Phone</h4>
-                        Tel: {{$ctrl.phone}}</li>
-                    <li class="nav-link">
-                        <h4>Fax Number</h4>
-                        Fax: {{$ctrl.fax}}
-                    </li>
-                    <li class="nav-link">
-                        <h4>Public Email</h4>
-                        Email: {{$ctrl.email}}</li>
-                        <li class="nav-link">
-                                <h4>Tracing Support</h4>
-                                Email: {{$ctrl.tracing}}</li>
-                </ul>
-            </div>
+    <div class="row">
+        <div class="col-md-6 p-4">
+            <div class="display-4">Customer Support</div>
+            <p class="lead text-muted mb-4 p-2">
+              How can we help you?  
+            </p>
+            <ul class="nav">
+                <li class="nav-link">
+                    <h4>Office Phone</h4>
+                    Tel: {{$ctrl.phone}}
+                </li>
+                <li class="nav-link">
+                    <h4>Fax Number</h4>
+                    Fax: {{$ctrl.fax}}
+                </li>
+                <li class="nav-link">
+                    <h4>Public Email</h4>
+                    Email: {{$ctrl.email}}
+                </li>
+                <li class="nav-link">
+                    <h4>Tracing Support</h4>
+                    Email: {{$ctrl.tracing}}
+                </li>
+            </ul>
         </div>
+        <div class="col-md-6">
+            <img src="img/banner2.png" class="w-100 rounded shadow-sm border" />
+        </div>
+    </div>
 </div>
