@@ -1,61 +1,74 @@
-<div class="container-fluid my-4">
-        <div class="form-group">
-            <div class="row bg-dark">
-                    <div class="col"></div>
-                <div class="col-md-6 p-2">
-                    <p class="text-left text-white font-weight-bold text-capitalize">
-                            Find website solutions, We do the work, you take the credit!
-                            
-                    </p>
-                    <input type="text" ng-model="$ctrl.shoppingItems.product" placeholder="type here..." class="form-control" />
-                </div>
-                <div class="col"></div>
-            </div>
-        </div>
+<div class="container-fluid my-4" ng-controller="WebsitesCtrl as web">
+
+       <div class="media">
+           <div class="media-left">
+               <img src="img/logo2.png" width="150" />
+           </div>
+           <div class="media-body">
+               <div class="media-header">
+                   <h3 class="display-4">Find Suitable Plan</h3>
+               </div>
+               <p>Helping you find the right website plan and pricing that is affordable, flexible yet quick for your business.</p>
+
+               <div class="row">
+                   <div class="col">
+                       Find Website Plans:
+                       <select ng-model="web.shoppingItems.product" class="form-control">
+                           <option>Small</option>
+                           <option>Medium</option>
+                           <option>Large</option>
+                       </select>
+                   </div>
+                   <div class="col">
+                       Scale Website:
+                       <select ng-model="web.shoppingItems.product" class="form-control">
+                           <option>VPS</option>
+                           <option>Cloud</option>
+                       </select>
+                   </div>
+                   
+               </div>
+              
+
+              
+           </div>
+       </div>
+
+
+       
         <ul class="nav">
-                <li ng-repeat="item in $ctrl.shoppingItems | filter: $ctrl.shoppingItems.product">
-                    <div class="p-3 m-1 bg-warning shadow-sm rounded">
-                        <div class="row">
-                            <div class="col-md-6 p-4">
-                                <img ng-src="{{item.image}}" class="w-100 rounded" />
-                                <h1 class="text-white font-weight-bold">Benefits</h1>
-                                <ul>
-                                    <li>Contact Form</li>
-                                    <li>Hosting Included</li>
-                                    <li>Monthly Maintenance</li>
-                                    <li>Search Engine Submission</li>
-                                    <li>24/7 Hosting Support</li>
-                                </ul>
-                                <small>
-                                        Your website will be live within (7 days)* or your first month FREE.
-                                </small>
-                            </div>
-                            <div class="col-md-6">
-                                    <h1>{{item.product}}</h1>
-                                <hr/>
-                                <h3 class="display-3 text-white fonte-weight-bold">{{item.cost | currency: "R"}}pm</h3>
-
-                                <a  class="shadow-sm btn p-3 btn-info rounded btn-lg" href="https://www.payfast.co.za/eng/process?cmd=_paynow&amp;receiver=11511929&amp;item_name=Website+Services+for+Enterprise+Business&amp;amount={{item.cost}}&amp;return_url=https%3A%2F%2Forenlabs.com%2F%23%21%2Fconfirmation&amp;cancel_url=https%3A%2F%2Forenlabs.com%2F%23%21%2Ffailed&amp;cycles=0&amp;frequency=3&amp;m_subscription_id=pay_now_11511929&amp;m_payment_id=pay_now_11511929&amp;subscription_type=1&amp;recurring_amount={{item.cost}}">Get Offer Today<img src="https://www.payfast.co.za/images/buttons/light-small-subscribe.png" class="collapse" width="210" height="36" alt="Subscribe" title="Subscribe Now with PayFast" /></a>
-
-                                  Save 60% until month end!!
-                           
-                                <br/>
-                                <h4 class="text-white p-2">International* PROMO fixed price at $49 USD</h4>
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input type="hidden" name="hosted_button_id" value="HEDBNWJXGSNAU">
-                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                    <img  alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                                    </form>
-                                    
-                               <small class="text-dark my-2">
-                                    Website Go-Live Promise applicable from receipt of all website content and excludes weekends and public holidays.<br/>
-                                    We'll design and maintain your website, so you can focus on what you do best - bringing in clients! Best of all, all your hosting fees are included at a great price!
-                               </small>
-                            </div>
-                            <hr/>
+            <li ng-repeat="item in web.shoppingItems | filter: web.shoppingItems.product">
+                <div class="p-3 m-1 bg-light shadow-sm rounded">
+                    <div class="row">
+                        <div class="col">
+                            <img ng-src="{{item.image}}" class="w-100 rounded" />
                         </div>
+                        <div class="col-md-4 p-4">
+                           
+                            <h1 class="text-dark font-weight-bold">{{item.product }} Benefits</h1>
+                            <ul>
+                                <li>Contact Form</li>
+                                <li>Hosting Included</li>
+                                <li>Monthly Maintenance</li>
+                                <li>Search Engine Submission</li>
+                                <li>24/7 Hosting Support</li>
+                            </ul>
+                            <small>
+                                Your {{item.product}} website will be live within (7 days)* or your first month FREE.
+                            </small>
+                        </div>
+                        <div class="col-md-4">
+                            <h1>{{item.product}}</h1>
+                            <hr />
+                            <h3 class="display-3 text-dark fonte-weight-bold">{{item.cost | currency: "R"}}pm</h3>
+
+                            <a class="shadow-sm btn p-3 btn-info rounded btn-lg" href="https://www.payfast.co.za/eng/process?cmd=_paynow&amp;receiver=11511929&amp;item_name=Website+Services+for+Enterprise+Business&amp;amount={{item.cost}}&amp;return_url=https%3A%2F%2Forenlabs.com%2F%23%21%2Fconfirmation&amp;cancel_url=https%3A%2F%2Forenlabs.com%2F%23%21%2Ffailed&amp;cycles=0&amp;frequency=3&amp;m_subscription_id=pay_now_11511929&amp;m_payment_id=pay_now_11511929&amp;subscription_type=1&amp;recurring_amount={{item.cost}}">Order {{item.product}} Now<img src="https://www.payfast.co.za/images/buttons/light-small-subscribe.png" class="collapse" width="210" height="36" alt="Subscribe" title="Subscribe Now with PayFast" /></a>
+
+                            
+                        </div>
+
                     </div>
-                </li>
+                </div>
+            </li>
         </ul>        
 </div>

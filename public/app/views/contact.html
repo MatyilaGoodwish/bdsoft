@@ -1,4 +1,4 @@
-<div class="container container-fluid p-2 my-4">
+<div class="container container-fluid p-2 my-4" ng-controller="ContactCtrl as info">
 
     <div class="row">
         <div class="col-md-6 p-4">
@@ -9,19 +9,19 @@
             <ul class="nav">
                 <li class="nav-link">
                     <h4>Office Phone</h4>
-                    Tel: {{$ctrl.phone}}
+                    Tel: {{info.phone}}
                 </li>
                 <li class="nav-link">
                     <h4>Fax Number</h4>
-                    Fax: {{$ctrl.fax}}
+                    Fax: {{info.fax}}
                 </li>
                 <li class="nav-link">
                     <h4>Public Email</h4>
-                    Email: {{$ctrl.email}}
+                    Email: {{info.email}}
                 </li>
                 <li class="nav-link">
                     <h4>Tracing Support</h4>
-                    Email: {{$ctrl.tracing}}
+                    Email: {{info.tracing}}
                 </li>
             </ul>
         </div>

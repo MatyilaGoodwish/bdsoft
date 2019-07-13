@@ -1,53 +1,11 @@
 
-<div class="bg-light container-fluid w-100 shadow-sm">
-        <div class="row pt-3">
-            <div class="col-md-3 text-muted p-1 text-left">
-                
-                <ul class="container text-justify text-left my-2">
-                    <li class="nav-link">
-                            <a href="#">
-                                    <img src="img/logo2.png" class="w-100" />
-                                </a>
-                       
-                    </li>
-                 </ul>
-            </div>
-            <div class="col-md-3 text-muted p-1 text-left"> 
-                <ul class="container text-justify text-left">
-                    <li class="nav-link">Security Reports <a href="https://www.trendmicro.com/vinfo/ae/security/research-and-analysis/threat-reports"> >> </a></li>
-                    <li class="nav-link">Free Webinars <a href="https://www.trendmicro.com/en_ae/about/webinars-customer.html"> >> </a></li>
-                    <li class="nav-link">Success Stories <a href="https://www.trendmicro.com/en_ae/about/customer-stories.html"> >> </a></li>
-                    <li class="nav-link">Maximum Security <a href="https://www.trendmicro.com/en_ae/forHome/products/maximum-security.html"> >> </a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 text-muted p-1 text-left"> 
-                <ul class="container text-justify text-left">
-                    <li class="nav-link">FAQ Products <a href="https://esupport.trendmicro.com/en-us/home/pages/resources.aspx"> >> </a></li>
-                    <li class="nav-link">Home & Office Support <a href="https://esupport.trendmicro.com/en-us/home/pages/technical-support/1115328.aspx?cm_mmc=MyAccount-_-ContactSupport-_-AllProducts-_-All"> >> </a></li>
-                    <li class="nav-link">Renewals <a href="https://account.trendmicro.com/mylogin"> >> </a></li>
-                    <li class="nav-link">Free Stuff <a href="https://www.trendmicro.com/en_ae/forHome/products/free-tools.html"> >> </a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 text-muted p-1 text-left"> 
-                <ul class="container text-justify text-left">
-                    <li class="nav-link">Trend Micro Home <a href="https://www.trendmicro.com/en_ae/forHome.html"> >> </a></li>
-                    <li class="nav-link">Internet Security <a href="https://www.trendmicro.com/en_ae/forHome/products/internet-security.html"> >> </a></li>
-                    <li class="nav-link">Antivirus+ Security <a href="https://www.trendmicro.com/en_ae/forHome/products/antivirus-plus.html"> >> </a></li>
-                    <li class="nav-link">Antivirus for Mac <a href="https://www.trendmicro.com/en_ae/forHome/products/antivirus-for-mac.html"> >> </a></li>
-                </ul>
-            </div>
-        </div>
-       
-        <div class="row bg-white text-dark p-4 shadow-sm text-center">
-            <span class="text-muted text-center p-2 mx-1">
-                BD Group (Pty)Ltd & Orenlabs &trade; &copy; 2010-2019 <br/>
-                <a href="http://connect.orenlabs.com">Connect with us</a> | <a href="/#/privacy">Privacy Policy</a>
-            </span>
+<div class="bg-dark container-fluid w-100 shadow-sm" ng-controller="FooterController as foot">
+    <div class="row pt-3">
 
-
-            <a href="#">
-                <img src="img/partner.png" class="120" />
-            </a>
+        <div class=" col text-muted text-center p-2 mx-1">
+            {{foot.company}} &trade; &copy; {{foot.copyrightYear}} <br />
+            <a href="http://connect.orenlabs.com">Connect with us</a> | <a href="/#/privacy">Privacy Policy</a>
         </div>
-           
     </div>
+
+</div>

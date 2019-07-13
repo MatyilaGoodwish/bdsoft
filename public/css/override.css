@@ -2,3 +2,11 @@ body,
 html {
     overflow-x: hidden
 }
+
+a:hover {
+    background-color: transparent !important;
+    color: gold !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}

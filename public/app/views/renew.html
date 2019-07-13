@@ -1,27 +1,27 @@
-<div class="container">
-    <div class="p-2 my-3">
-       <div class="display-4">{{$ctrl.section}}</div>
-        <p class="lead text-muted p-2">
-            {{$ctrl.title}}
-        </p>
-        <div class="row well-sm shadow-sm p-4">
-            <div class="col-md-6">
-                <form ng-show="$ctrl.isForm">
-                    <p class="lead">{{$ctrl.subscriptionLabel}}</p>
-                    <input type="email" placeholder="Customer Email"  class="form-control w-60" ng-model="$ctrl.email" required />
-                    <p></p>
-                    <button ng-click="$ctrl.getInformation()" class="shadow-sm btn p-3 btn-info rounded btn-lg">Request License</button>
-                </form>
-                <p ng-show="$ctrl.isNotify">
-                    <span class="alert alert-success font-weight-bold">{{$ctrl.notification}}</span>
-                </p>
-                <hr>
-                <img ng-src="{{$ctrl.partnerImage}}" class="w-100" />
-            </div>
-            <div class="col-md-6">
-                <img src="img/banner2.png" class="w-100 rounded shadow-sm border"/>
-            </div>
+<div class="container p-4" ng-controller="RenewalCtrl as renewal">
+    <div class="media">
+        <div class="media-left">
+            <img src="img/banner2.png" width="200" class="rounded shadow-sm border" />
         </div>
-       
-    </div>
+        <div class="media-body p-4">
+            <div class="media-header">
+                <div class="display-4">{{renewal.section}}</div>
+                <p class="lead text-muted">
+                    {{renewal.title}}
+                </p>
+            </div>
+
+            <form ng-show="renewal.isForm">
+                <p class="lead">{{renewal.subscriptionLabel}}</p>
+                <input type="email" placeholder="Customer Email" class="form-control" ng-model="renewal.email" required />
+                <p></p>
+                <button ng-click="renewal.getInformation()" class="shadow-sm btn p-3 btn-info rounded btn-lg">Request License</button>
+            </form>
+            <p ng-show="renewal.isNotify">
+                <span class="alert alert-success font-weight-bold">{{renewal.notification}}</span>
+            </p>
+        </div>
+        </div>
 </div>
+
+ 

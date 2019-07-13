@@ -3,8 +3,9 @@
     "",
     "\\public",
     "\\public\\app",
-    "\\public\\app\\services"
+    "\\public\\app\\views",
+    "\\public\\layouts"
   ],
-  "SelectedNode": "\\public\\app\\services\\products.js",
+  "SelectedNode": "\\public\\layouts\\footer.html",
   "PreviewInSolutionExplorer": false
 }

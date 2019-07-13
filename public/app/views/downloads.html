@@ -1,25 +1,36 @@
 <div class="container-fluid my-4">
-        <div class="form-group">
-            <div class="row bg-dark">
-                    <div class="col"></div>
-                <div class="col-md-4 p-2">
-                    <p class="text-left text-white font-weight-bold">
-                        {{$ctrl.title}}
-                    </p>
-                    <input type="text" ng-model="$ctrl.shoppingItems.product" placeholder="Type here..." class="form-control" />
-                </div>
-                <div class="col"></div>
-            </div>
+    <div class="media">
+        <div class="media-left">
+            <img src="img/logo2.png" />
         </div>
+        <div class="media-body">
+            <div class="media-header">
+                <h2> {{$ctrl.title}}</h2>
+            </div>
+            <p>
+                Find the Trend Micro Products, download them to your computer activate trial to obtain paid version contact us.
+            </p>
+            <div>
+                <input type="text" ng-model="$ctrl.shoppingItems.product" placeholder="Product name" class="form-control" />
+
+            </div>
+       </div>
+
+
+
+    </div>
+
+
+
         <ul class="nav">
                 <li ng-repeat="item in $ctrl.shoppingItems | filter: $ctrl.shoppingItems.product">
-                    <div class="p-2 m-1 shadow-sm rounded">
-                        <div class="row">
-                            <div class="col-md-6">
+                    <div class="p-2 m-1 shadow-sm rounded media">
+                        <div class="media">
+                            <div class="media-left">
                                 <img ng-src="{{item.image}}" class="w-75" />
                             </div>
-                            <div class="col-md-6">
-                                <h1>{{item.product}}</h1>
+                            <div class="media-body">
+                                <h1 class="media-header">{{item.product}}</h1>
                                 <p>{{item.description}}</p>
                                 <a ng-href="{{item.download}}" class="shadow-sm btn p-3 btn-info rounded btn-lg">Download Now</a>
 
