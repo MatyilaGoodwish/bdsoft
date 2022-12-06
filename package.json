@@ -4,7 +4,7 @@
   "description": "<H1>AngularJS Project.</H2>\r <p>\r Production URL: https://www.bdsoft.co.za\r </p>\r <h4>AngularJS project for BD Soft</h4>",
   "main": "index.js",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.2"
   },
   "devDependencies": {},
   "scripts": {
